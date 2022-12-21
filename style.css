@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@100&family=Pacifico&display=swap');
+body{
+    
+}
+div{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+table{
+    border-collapse: collapse;
+    border: 4px solid rgb(60, 42, 42);
+    margin: auto;
+}
+#outer-display{
+    padding: 0px;
+    height: 120px;
+    background-color: rgb(27, 27, 75);
+}
+
+.function{
+    font-family: 'Dancing Script', cursive;
+    background-color: rgb(178, 239, 56);
+    padding: 25px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+input{
+    font-family: 'Dancing Script', cursive;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 96%;
+    height: 100px;
+    font-size: larger;
+    /* font-size: 25px; */
+    color: white;
+    text-align: end;
+}
+.number{
+    background-color: white;
+}
+.function:hover{
+    background-color: rgb(248, 221, 200);
+}
+::placeholder{
+    color: antiquewhite;
+}
