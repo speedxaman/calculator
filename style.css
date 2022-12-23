@@ -25,7 +25,7 @@ table{
     border: 0.5px solid black;
     cursor: pointer;
 }
-input{
+#display{
     font-family: 'Dancing Script', cursive;
     background-color: transparent;
     outline: none;
@@ -45,4 +45,7 @@ input{
 }
 ::placeholder{
     color: antiquewhite;
+}
+.operators{
+    font-size: larger;
 }
