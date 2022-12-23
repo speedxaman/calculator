@@ -1,23 +1,25 @@
 function calculate(e) {
-    var icon = document.getElementsByClassName('fa-solid')
-    // console.log(icon)
+    console.log(e.target)
     if ((e.target.innerHTML == '=')){
+        buttons[1].style.backgroundColor = 'red';
         string = eval(string);
-        document.getElementById("display").value = string;
+        document.getElementById("display").innerText = string;
     }
     else if (e.target.innerHTML == 'AC') {
+        
         string = "";
-        document.getElementById("display").value = string;
-    } else if(e.target.innerHTML == icon[0]){
-        // console.log(e.target)
-        string = string + '/';
-        document.getElementById("display").value = string;
+        document.getElementById("display").innerText = string;
+        location.reload();
+    }else if(e.target.innerHTML == 'Del'){
+        string = string.slice(0,string.length-1)
+        document.getElementById('display').innerText = string
+
     }
     else {
-        // console.log(e.target)
         string = string + e.target.innerHTML;
-        document.getElementById("display").value = string;
+        document.getElementById("display").innerText = string;
     }
+
 }
 
 let buttons = document.getElementsByClassName('function');
@@ -26,6 +28,7 @@ for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', calculate);
     
 }
+
 // For Changing Color of Background of a Number when Clicked
 let numbers = document.getElementsByClassName('number')
 for (let i=0;i<numbers.length;i++){
